@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Gooogle fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body style="font-family: 'PT Sans'">
+    <main class="px-8 md:px-16 lg:px-24 max-w-screen-xl mx-auto">
+
+        <div class="text-center my-8">
+         <h1 class="lg:text-6xl text-3xl font-extrabold text-[#1abc9c]">Digital Tasbih</h1>
+        </div>
+  
+    <div class="card-container grid lg:grid-cols-3 gap-8 md:grid-cols-2 grid-cols-1 lg:mt-28">
+         <!-- First card -->
+     <div class="card bg-base-100 shadow-xl ">
+        <div class="card-body space-y-6">
+          <h2 class="card-title font-medium text-2xl mx-auto">Subhan Allah</h2>
+          <h1 class="text-center text-3xl" id="subhanAllah-Display-value">0</h1>
+
+          <div class="card-actions justify-end">
+            <button class="btn btn-success text-white mx-auto" id="subhanAllah-incriment">Increment</button>
+            <button class="btn btn-error text-white mx-auto" id="subhanAllah-decriment">Decrement</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Second card -->
+     <div class="card bg-base-100 shadow-xl ">
+        <div class="card-body space-y-6">
+          <h2 class="card-title font-medium text-2xl mx-auto" >Alhamdulillah</h2>
+          <h1 id="alhamdulillah-Display-value" class="text-center text-3xl">0</h1>
+          <div class="card-actions justify-end">
+            <button id="alhamdulillah-incriment" class="btn btn-success text-white mx-auto">Increment</button>
+            <button id="alhamdulillah-decriment" class="btn btn-error text-white mx-auto">Decrement</button>
+          </div>
+        </div>
+      </div>
+
+<!-- Third card -->
+     <div class="card bg-base-100 shadow-xl ">
+        <div class="card-body space-y-6">
+          <h2 class="card-title font-medium text-2xl mx-auto">Allah Hu Akbar</h2>
+          <h1 id="allahuAkbar-Display-value" class="text-center text-3xl">0</h1>
+          <div class="card-actions">
+            <button id="allahuAkbar-incriment" class="btn btn-success text-white mx-auto">Increment</button>
+            <button id="allahuAkbar-decriment" class="btn btn-error text-white mx-auto">Decrement</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       <div class="text-center my-12">
+        <button id="rest-btn" class="btn btn-warning">Reset All</button>
+        </div>
+
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
